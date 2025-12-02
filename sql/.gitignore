@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+.vscode/
+# If you created a virtual environment:
+venv/
+env/
+# Optional: You can keep the csv, but ignore the DB volume if it exists locally
+*.db
