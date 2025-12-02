@@ -25,21 +25,22 @@ This project implements a normalized relational database (OLTP) for a **Hospital
 ```bash
 git clone [https://github.com/Ramaseshu0E/Hospital_DB_Project.git](https://github.com/Ramaseshu0/Hospital_DB_Project.git)
 cd Hospital_DB_Project
-
+```
 2. Start the Database (Docker)
 We use Docker Compose to spin up a PostgreSQL 15 container and Adminer (a web-based DB viewer).
 
-Bash
+```Bash
 
 docker-compose up -d
 Database Port: 5433 (Mapped to avoid conflicts with local Postgres)
-
+```
 Adminer UI: http://localhost:8080/
 
 3. Install Python Dependencies
-Bash
+```Bash
 
 pip install -r requirements.txt
+```
 🛠️ Phase 1: Database Implementation (OLTP)
 Data Ingestion (ETL)
 The src/ingest_data.py script handles data cleaning (fixing text case, date formatting) and loads it into the database.
